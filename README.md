@@ -63,9 +63,17 @@ The data from each state provide slightly different variations or variables but 
 
 ## Caveats and Limitations
 
-- What challenges and pitfalls will they likely encounter with the data? How can they solve those?
-- What do we know about how different each dataset is for the states we have? Do the conclusions reporters can reach with each dataset vary?
-- Any specifics we're concerned about for each dataset?
+In each state, it’s important to keep in mind three major limitations of this data:
+
+1) Each state’s reporting requirements are different, so the data reported are a result of the requirements and the purpose they serve for that facility or state. Some facilities may report only major adverse events, others may have detailed state requirements beyond major events, like[ Pennsylvania](https://patientsafety.pa.gov/PA-PSRS/Pages/PAPSRS.aspx?t=papsrs) or[ California](https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/Reportable-Adverse-Events.aspx).
+2) Even if the state has detailed requirements, the data are still self-reported and subject to the same risks of omission and bias of all self-reported data.
+3) Without more data on the facilities themselves, comparing facilities across a state presents confounding variables that could increase the number of adverse events it reported, such as the average length of stay for a patient, the number of beds in the hospital or the age and health of the population the facility serves. Even a better culture of reporting could cause higher rates of adverse events that make a facility stand out when its actual number of events isn’t higher than other facilities.
+
+### First questions to ask the data for each state
+- What types of events are most common? How could this reflect the reporting requirements in the state?
+- What types of facilities have the most adverse events? Is there data available on the size of the facility or population it serves?
+- What do experts say about the above two questions in relation to broader changes in healthcare, like shortages of staff or[ COVID’s strain on resources](https://www.startribune.com/hospital-adverse-events-rose-during-pandemic/600195240)?
+
 
 
 ## Requests
