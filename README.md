@@ -1,15 +1,21 @@
 # Adverse Events State by State Data
 
-- What project is that part of? DLP, patient safety intiative 
-- Background on this data
-- What are adverse events? What is the field of "patient safety"?
+This data is part of [the Data Liberation Project's patient safety data initiative](https://www.muckrock.com/project/patient-safety-1250/). We're requesting and publishing datasets about health care delivery at both the federal level and state by state.
+
+Adverse events are a core piece of patient safety. They’re medical errors and their consequences, an idea that captured the field of healthcare’s attention after the[ Institute of Medicine’s 1999 report](https://pubmed.ncbi.nlm.nih.gov/25077248/) that laid the problem of patient harm bare. The report sparked decades of nationwide efforts, but a recent[ Office of Inspector General](https://oig.hhs.gov/reports/featured/adverse-events/) (OIG) report[ still found](https://oig.hhs.gov/reports/all/2025/the-patient-safety-organization-program-key-barriers-impeding-nationwide-progress-toward-reducing-patient-harm-in-hospitals/) that “patient harm events in hospitals remain a serious concern.”
 
 ## Data
 
-- What states of data do we have? What summary overview can we say about each dataset?
-- How are/aren't these data tracked across the country?
-- Why are they important?
-- Overview of where to find that data and how this project is structured
+An[ adverse event](https://psnet.ahrq.gov/primer/adverse-events-near-misses-and-errors) is a term for the types of harm that can happen during medical care like mistakes in surgeries or hospital-induced infections. They’re injuries that happen as a result of medical care, not due to the patient’s underlying injury or disease.
+
+[An OIG survey found](https://oig.hhs.gov/reports/all/2025/hospitals-reported-few-captured-patient-harm-events-to-cms-and-states/) that 26 states and the District of Columbia had reporting requirements for adverse events.[ We’ve filed requests](https://www.muckrock.com/project/dlp-patient-safety-1250/) to over 30 states so far to find out which have reporting requirements and provide records in public records requests.
+
+The data from each state provide slightly different variations or variables but have a few things in common: 
+- Each row is an adverse event
+- Each adverse event has a type or category for the harm that occurred
+- Each adverse event has a date
+- Each adverse event has a facility or location
+
 
 ### Summaries of states that have returned useful data
 
@@ -17,7 +23,7 @@
 - Timeframe: January 2023 - December 2024 (though [we requested a decade of data more](https://www.muckrock.com/foi/california-52/aer-ca-dept-of-public-health-215077/))
 - Number of rows: 4, 682
 - Important variables:
-    - `recvdate` - date given to the event in the data, could be the day the event was recorded or recieved and not the date of the event itself
+    - `recvdate` - date given to the event in the data, could be the day the event was recorded or received and not the date of the event itself
     - `intakeid` - could be the unique id of the event
     - `adverse_event` - general description of the event
     - `finding_detail`- whether the event was "substantiated" or "unsubtantiated"
@@ -35,7 +41,7 @@
     - `type_of_occurence` - the type of adverse event
     - `occurence_date` - date given to the event in the data
     - `occurcence_description` - free text description events
-        - **These are very detailed descriptions that would critical for reporting**, but we only recieved them for years 2023 and 2024. When we requested a decade more of data, we agreed to leave this aside because the agency told us "the cost and processing time will be significant" for a "manual review of over 50,000 occurrence descriptions." But that could be revisited or a future request could be made for the occurence descriptions of only some types of requests.
+        - **These are very detailed descriptions that would be critical for reporting**, but we only received them for years 2023 and 2024. When we requested a decade more of data, we agreed to leave this aside because the agency told us "the cost and processing time will be significant" for a "manual review of over 50,000 occurrence descriptions." But that could be revisited or a future request could be made for the occurence descriptions of only some types of requests.
 
 #### Washington
 - Timeframe: 2014 - 2025
@@ -45,7 +51,7 @@
     - `event_type` - grouping for adverse types
     - `adverse_event` - more specific adverse event type
     - `facility_size` - could be total number of licensed beds, useful for a rough rate
-    - `year` - year event took place in; we didn't recieve dates for events in this dataset
+    - `year` - year event took place in; we didn't receive dates for events in this dataset
 
 #### Michigan 
 - Timeframe: January 2023 - December 2024
