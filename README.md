@@ -81,7 +81,7 @@ It’s important to note three major limitations of this data:
 - In `data/manual/map.csv` you can find the csv [that upderpins a map](https://www.datawrapper.de/_/bHX1b/?v=7) with each state's reporting status according to the OIG report and labeled based on the status of MuckRock requests. Each request is given on of the following categories:
   - `not_requested`: we haven't requested data from this state yet
   - `not_received`: we haven't recieved data from the state because the request was rejected, there were no responsive documents or the request is ongoing
-  - `received_incorrect_form`: we recieved data, but it was not in the form we requested as "all adverse events" but aggregrated or seggrated to a smaller portion of data 
+  - `received_incorrect_form`: we received data, but it was not in the form we requested as "all adverse events" and instead it was aggregated or segregated to a smaller portion of data 
   - `received`: we recieved facility-level data for individual events 
     
 
