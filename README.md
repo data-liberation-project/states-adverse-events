@@ -75,67 +75,24 @@ In each state, it’s important to keep in mind three major limitations of this 
 - What do experts say about the above two questions in relation to broader changes in healthcare, like shortages of staff or[ COVID’s strain on resources](https://www.startribune.com/hospital-adverse-events-rose-during-pandemic/600195240)?
 
 
+## Mapping state statutes and MuckRock requests
+- You can find the requests we've filed to states [on MuckRock](https://www.muckrock.com/project/dlp-patient-safety-1250/) where each adverse events requests has "AER" for adverse events reporting in the title of the request.
+- We then organized our requests into categories of whether we recieved the data and whether a [2025 OIG report found the state had a mandated reporting system](https://oig.hhs.gov/documents/evaluation/10842/OEI-06-18-00402.pdf).
+- In `data/manual/map.csv` you can find a csv with each state's reporting status according to the OIG report and labeled based on the status of MuckRock requests. Each request is given on of the following categories:
+  - `not_requested`: we haven't requested data from this state yet
+  - `not_received`: we haven't recieved data from the state because the request was rejected, there were no responsive documents or the request is ongoing
+  - `received_incorrect_form`: we recieved data, but it was not in the form we requested as "all adverse events" but aggregrated or seggrated to a smaller portion of data 
+  - `received`: we recieved facility-level data for individual events 
+    
 
-## Requests
 
-| Jurisdiction | Agency | Status | Request Link |
-|---|---|---|---|
-| Alabama | Alabama Medicaid Agency | Fix Required | [MuckRock request](https://www.muckrock.com/foi/alabama-159/aer-al-medicaid-agency-207530/) |
-| Arkansas | Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/arkansas-114/aer-ar-dept-of-health-207532/) |
-| California | California Department of Public Health | Completed | [MuckRock request](https://www.muckrock.com/foi/california-52/aer-ca-dept-of-public-health-207525/) |
-| California | California Department of Public Health | Awaiting Response | [MuckRock request](https://www.muckrock.com/foi/california-52/aer-ca-dept-of-public-health-215077/) |
-| Colorado | Department of Public Health and Environment | Completed | [MuckRock request](https://www.muckrock.com/foi/colorado-127/aer-co-dept-of-public-health-and-env-207526/) |
-| Colorado | Department of Public Health and Environment | Completed | [MuckRock request](https://www.muckrock.com/foi/colorado-127/aer-co-dept-of-public-health-and-env-215078/) |
-| Connecticut | Department of Public Health | Awaiting Response | [MuckRock request](https://www.muckrock.com/foi/connecticut-53/aer-ct-dept-of-public-health-207527/) |
-| Delaware | Department of Health and Social Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/delaware-236/aer-de-dept-of-health-and-social-services-207533/) |
-| Delaware | Department of Health and Social Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/delaware-236/aer-de-dept-of-health-and-social-services-211210/) |
-| Florida | Agency for Healthcare Administration | Rejected | [MuckRock request](https://www.muckrock.com/foi/florida-34/aer-fl-agency-for-healthcare-admin-207528/) |
-| Florida | Agency for Healthcare Administration | Rejected | [MuckRock request](https://www.muckrock.com/foi/florida-34/aer-fl-agency-for-healthcare-admin-210811/) |
-| Georgia | Department of Human Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/georgia-230/aer-ga-dept-of-human-services-207529/) |
-| Georgia | Department of Human Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/georgia-230/aer-ga-dept-of-human-services-210816/) |
-| Idaho | Department of Health and Welfare | Completed | [MuckRock request](https://www.muckrock.com/foi/idaho-228/aer-id-dept-of-health-and-welfare-207534/) |
-| Illinois | Department of Public Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/illinois-168/aer-il-dept-of-public-health-207535/) |
-| Kansas | Department of Health & Environment | Rejected | [MuckRock request](https://www.muckrock.com/foi/kansas-111/aer-ks-dept-of-health-and-environment-208098/) |
-| Kansas | Kansas Department for Aging and Disability Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/kansas-111/aer-ks-dept-of-aging-and-disability-services-208801/) |
-| Kansas | Kansas Department for Aging and Disability Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/kansas-111/aer-ks-dept-of-aging-and-disability-services-redo-210806/) |
-| Louisiana | Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/louisiana-233/aer-la-department-of-health-208165/) |
-| Louisiana | Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/louisiana-233/aer-la-department-of-health-210809/) |
-| Maine | Department of Health and Human Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/maine-13/aer-me-dept-of-health-and-human-services-208100/) |
-| Maine | Department of Health and Human Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/maine-13/aer-me-dept-of-health-and-human-services-210812/) |
-| Maryland | Department of Health and Mental Hygiene | Rejected | [MuckRock request](https://www.muckrock.com/foi/maryland-154/aer-md-department-of-health-and-mental-hygiene-208108/) |
-| Maryland | Department of Health and Mental Hygiene | Rejected | [MuckRock request](https://www.muckrock.com/foi/maryland-154/aer-md-department-of-health-and-mental-hygiene-redo-210814/) |
-| Massachusetts | Department of Public Health | Fix Required | [MuckRock request](https://www.muckrock.com/foi/massachusetts-1/aer-ma-department-of-public-health-208109/) |
-| Michigan | Michigan Department of Health and Human Services | Completed | [MuckRock request](https://www.muckrock.com/foi/michigan-117/aer-mi-department-of-health-and-human-services-208166/) |
-| Minnesota | Minnesota Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/minnesota-156/aer-mn-department-of-health-208110/) |
-| Minnesota | Minnesota Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/minnesota-156/aer-mn-department-of-health-210808/) |
-| Missouri | Department of Health and Senior Services | Completed | [MuckRock request](https://www.muckrock.com/foi/missouri-299/aer-mo-department-of-health-and-human-services-208167/) |
-| Nebraska | Department of Health and Human Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/nebraska-300/aer-ne-department-of-health-and-human-services-208168/) |
-| Nevada | Department of Health and Human Services | Consolidated | [MuckRock request](https://www.muckrock.com/foi/nevada-301/aer-nv-state-health-division-208113/) |
-| Nevada | Nevada Health Authority | Completed | [MuckRock request](https://www.muckrock.com/foi/nevada-301/aer-nv-state-health-division-210801/) |
-| New Hampshire | Department of Health and Human Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/new-hampshire-81/aer-nh-department-of-health-and-human-services-208169/) |
-| New Hampshire | Department of Health and Human Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/new-hampshire-81/aer-nh-department-of-health-and-human-services-210810/) |
-| New Jersey | Department of Health | Awaiting Response | [MuckRock request](https://www.muckrock.com/foi/new-jersey-229/aer-nj-department-of-health-and-senior-services-208115/) |
-| New York | New York State Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/new-york-16/aer-ny-department-of-health-208123/) |
-| North Dakota | Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/north-dakota-232/aer-nh-department-of-health-208170/) |
-| Ohio | Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/ohio-116/aer-oh-department-of-health-208124/) |
-| Oklahoma | Oklahoma Department of Health | Awaiting Acknowledgement | [MuckRock request](https://www.muckrock.com/foi/oklahoma-248/aer-ok-department-of-health-208171/) |
-| Oregon | Oregon Health Authority | Rejected | [MuckRock request](https://www.muckrock.com/foi/oregon-158/aer-or-health-authority-208125/) |
-| Oregon | Patient Safety Commission | Completed | [MuckRock request](https://www.muckrock.com/foi/oregon-158/aer-or-health-authority-209408/) |
-| Oregon | Patient Safety Commission | Completed | [MuckRock request](https://www.muckrock.com/foi/oregon-158/aer-or-patient-safety-commission-211209/) |
-| Pennsylvania | Pennsylvania Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/pennsylvania-126/aer-pa-patient-safety-authority-208126/) |
-| Rhode Island | Department of Health | Fix Required | [MuckRock request](https://www.muckrock.com/foi/rhode-island-82/aer-ri-department-of-health-208127/) |
-| Rhode Island | Department of Health | Awaiting Response | [MuckRock request](https://www.muckrock.com/foi/rhode-island-82/aer-ri-department-of-health-redo-212247/) |
-| South Carolina | Department of Health and Environmental Control | Awaiting Acknowledgement | [MuckRock request](https://www.muckrock.com/foi/south-carolina-302/aer-sc-department-of-health-and-environmental-control-208128/) |
-| South Dakota | Department of Health | Awaiting Acknowledgement | [MuckRock request](https://www.muckrock.com/foi/south-dakota-303/aer-south-dakota-department-of-health-208136/) |
-| Tennessee | Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/tennessee-155/aer-tn-dept-of-health-208159/) |
-| Texas | Texas Health and Human Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/texas-109/aer-tx-department-of-health-and-human-services-208172/) |
-| Texas | Texas Department of State Health Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/texas-109/aer-tx-department-of-state-health-services-208802/) |
-| Texas | Texas Department of State Health Services | Completed | [MuckRock request](https://www.muckrock.com/foi/texas-109/aer-tx-department-of-state-health-services-210805/) |
-| Utah | Utah Department of Health and Human Services | Rejected | [MuckRock request](https://www.muckrock.com/foi/utah-234/aer-ut-dept-of-health-208160/) |
-| Vermont | Vermont Department Of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/vermont-80/aer-vt-dept-of-health-208161/) |
-| Washington | Department of Health | Completed | [MuckRock request](https://www.muckrock.com/foi/washington-54/aer-wa-dept-of-health-208163/) |
-| West Virginia | Department of Health and Human Resources | Rejected | [MuckRock request](https://www.muckrock.com/foi/west-virginia-304/aer-wv-department-of-health-and-human-resources-208175/) |
-| West Virginia | West Virginia Department Of Health | No Responsive Documents | [MuckRock request](https://www.muckrock.com/foi/west-virginia-304/aer-wv-department-of-health-and-human-resources-208800/) |
-| Wisconsin | Wisconsin Department of Health Services | No Responsive Documents | [MuckRock request](https://www.muckrock.com/foi/wisconsin-146/aer-wi-department-of-health-services-208176/) |
-| Wyoming | Wyoming Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/wyoming-305/aer-wy-dept-of-health-208164/) |
-| Wyoming | Wyoming Department of Health | Rejected | [MuckRock request](https://www.muckrock.com/foi/wyoming-305/aer-wy-dept-of-health-redo-210807/) |
+
+
+
+
+
+
+
+
+
+
