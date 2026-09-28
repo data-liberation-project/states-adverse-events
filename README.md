@@ -6,15 +6,15 @@ Adverse events data is a core component of patient safety. Medical errors and th
 
 
 ## Data
-[Adverse events](https://psnet.ahrq.gov/primer/adverse-events-near-misses-and-errors) are injuries that happen as a result of medical care, not due to the patients’ underlying injury or disease.[A 2025 OIG survey found](https://oig.hhs.gov/reports/all/2025/hospitals-reported-few-captured-patient-harm-events-to-cms-and-states/) that 26 states and the District of Columbia had reporting requirements for adverse events.
+[Adverse events](https://psnet.ahrq.gov/primer/adverse-events-near-misses-and-errors) are injuries that happen as a result of medical care, not due to the patients’ underlying injury or disease. [A 2025 OIG survey found](https://oig.hhs.gov/reports/all/2025/hospitals-reported-few-captured-patient-harm-events-to-cms-and-states/) that 26 states and the District of Columbia had reporting requirements for adverse events.
 
 [We’ve filed requests](https://www.muckrock.com/project/dlp-patient-safety-1250/) to over 30 states so far to find out which have reporting requirements and which provide that data in response to public records requests.
 
 Each state provides slightly different variations or variables, but the datasets have a few things in common: 
 - Each row is an adverse event 
-\- Each adverse event has a type or category for the harm that occurred 
-\- Each adverse event has a date 
-\- Each adverse event has a facility or location
+- Each adverse event has a type or category for the harm that occurred 
+- Each adverse event has a date 
+- Each adverse event has a facility or location
 
 ### Summaries of states that have returned useful data
 
@@ -54,9 +54,9 @@ Each state provides slightly different variations or variables, but the datasets
 
 
 #### Michigan 
-Timeframe: January 2023 - December 2024
-Number of rows: 11,980
-Important variables:
+- Timeframe: January 2023 - December 2024
+- Number of rows: 11,980
+- Important variables:
     - This data seems to include only events that happened at Michigan’s state-owned mental health hospitals. 
     - `event_type` - grouping for adverse types
     - `date_of_incident` - date given to the event in the data
