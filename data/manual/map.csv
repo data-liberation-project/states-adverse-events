@@ -14,7 +14,7 @@ HI,N,not_requested
 IA,N,not_requested
 ID,N,received_incorrect_form
 IL,Y,not_received
-IN,Y,not_requested
+IN,Y,not_recieved
 KS,N,not_received
 KY,N,not_requested
 LA,N,not_received
@@ -32,7 +32,7 @@ NE,Y,not_received
 NH,Y,not_received
 NJ,Y,not_received
 NM,N,not_requested
-NV,Y,not_requested
+NV,Y,not_received
 NY,Y,not_received
 OH,N,not_received
 OK,Y,not_received
