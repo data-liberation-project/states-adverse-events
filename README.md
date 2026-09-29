@@ -6,15 +6,15 @@ Adverse events data is a core component of patient safety. Medical errors and th
 
 
 ## Data
-[Adverse events](https://psnet.ahrq.gov/primer/adverse-events-near-misses-and-errors) are injuries that happen as a result of medical care, not due to the patients’ underlying injury or disease.[A 2025 OIG survey found](https://oig.hhs.gov/reports/all/2025/hospitals-reported-few-captured-patient-harm-events-to-cms-and-states/) that 26 states and the District of Columbia had reporting requirements for adverse events.
+[Adverse events](https://psnet.ahrq.gov/primer/adverse-events-near-misses-and-errors) are injuries that happen as a result of medical care, not due to the patients’ underlying injury or disease. [A 2025 OIG survey found](https://oig.hhs.gov/reports/all/2025/hospitals-reported-few-captured-patient-harm-events-to-cms-and-states/) that 26 states and the District of Columbia had reporting requirements for adverse events.
 
 [We’ve filed requests](https://www.muckrock.com/project/dlp-patient-safety-1250/) to over 30 states so far to find out which have reporting requirements and which provide that data in response to public records requests.
 
 Each state provides slightly different variations or variables, but the datasets have a few things in common: 
 - Each row is an adverse event 
-\- Each adverse event has a type or category for the harm that occurred 
-\- Each adverse event has a date 
-\- Each adverse event has a facility or location
+- Each adverse event has a type or category for the harm that occurred 
+- Each adverse event has a date 
+- Each adverse event has a facility or location
 
 ### Summaries of states that have returned useful data
 
@@ -54,9 +54,9 @@ Each state provides slightly different variations or variables, but the datasets
 
 
 #### Michigan 
-Timeframe: January 2023 - December 2024
-Number of rows: 11,980
-Important variables:
+- Timeframe: January 2023 - December 2024
+- Number of rows: 11,980
+- Important variables:
     - This data seems to include only events that happened at Michigan’s state-owned mental health hospitals. 
     - `event_type` - grouping for adverse types
     - `date_of_incident` - date given to the event in the data
@@ -81,7 +81,7 @@ It’s important to note three major limitations of this data:
 - In `data/manual/map.csv` you can find the csv [that upderpins a map](https://www.datawrapper.de/_/bHX1b/?v=7) with each state's reporting status according to the OIG report and labeled based on the status of MuckRock requests. Each request is given on of the following categories:
   - `not_requested`: we haven't requested data from this state yet
   - `not_received`: we haven't recieved data from the state because the request was rejected, there were no responsive documents or the request is ongoing
-  - `received_incorrect_form`: we recieved data, but it was not in the form we requested as "all adverse events" but aggregrated or seggrated to a smaller portion of data 
+  - `received_incorrect_form`: we received data, but it was not in the form we requested as "all adverse events" and instead it was aggregated or segregated to a smaller portion of data 
   - `received`: we recieved facility-level data for individual events 
     
 
