@@ -42,6 +42,26 @@ Each state provides slightly different variations or variables, but the datasets
     - `occurence_description` - free text description of events
         - These are very detailed descriptions that would be critical for reporting, but we only received them for years 2023 and 2024. When we requested a decade of additional data, we agreed to leave this aside, because the agency told us “the cost and processing time will be significant” for a “manual review of over 50,000 occurrence descriptions.” That could be revisited, or a future request could be made for the occurrence descriptions of only some types of events.
 
+#### Massachusetts
+- Timeframe: 2023 - 2025
+- Number of rows: TKTK
+- The MA Dept. of Public Health provided separate data tables with the total number of adverse events of different severity classes (`acute`, `non-acute` and `acs` for ambulatory care units) in each of the years 2023, 2024 and 2025 that occurred at different hospitals in the state. These nine microsoft excel spreadsheets are included in the repo along with a single concatenated CSV table containing all non-zero adverse event records in the source data: `MA - AER 2023-2025.csv`.
+- Important variables:
+    - `Facility` - name of the medical facility
+    - `Event` - description of the adverse event
+    - `Count` - number of times a given event type occured at a given hospital in a given year
+    - `Facilty ID` - 4-digit ID code assigned to each facility
+    - `Year` - year that a given event type occured
+    - `Class` - severity class of the event: `acute`, `non-acute` and `acs`
+
+#### Michigan 
+- Timeframe: January 2023 - December 2024
+- Number of rows: 11,980
+- Important variables:
+    - This data seems to include only events that happened at Michigan’s state-owned mental health hospitals. 
+    - `event_type` - grouping for adverse types
+    - `date_of_incident` - date given to the event in the data
+
 #### Washington
 - Timeframe: 2014 - 2025
 - Number of rows: 188,160
@@ -51,15 +71,6 @@ Each state provides slightly different variations or variables, but the datasets
     - `adverse_event` - more specific adverse event type
     - `facility_size` - number of licensed beds, useful for a rough rate
     - `year` - year event took place in; we didn’t receive specific dates for events in this dataset
-
-
-#### Michigan 
-- Timeframe: January 2023 - December 2024
-- Number of rows: 11,980
-- Important variables:
-    - This data seems to include only events that happened at Michigan’s state-owned mental health hospitals. 
-    - `event_type` - grouping for adverse types
-    - `date_of_incident` - date given to the event in the data
 
 ## Caveats and Limitations
 
@@ -84,11 +95,4 @@ It’s important to note three major limitations of this data:
   - `received_incorrect_form`: we received data, but it was not in the form we requested as "all adverse events" and instead it was aggregated or segregated to a smaller portion of data 
   - `received`: we recieved facility-level data for individual events 
     
-
-
-
-
-
-
-
 
